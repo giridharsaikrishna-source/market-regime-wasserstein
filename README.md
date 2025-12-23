@@ -17,6 +17,9 @@ This project implements a non-parametric market regime detection system using **
 | **Nifty 50** | **1.14** | 0.71 | **-23.79%** | -40.04% |
 | **Bank Nifty** | 1.02 | 1.07 | -25.33% | -22.40% |
 
+### **Strategy Performance**
+![Walk-Forward Equity Curve](assets/Walk-Forward%20Equity%20curve.png)
+
 ### Research Insight
 The model significantly outperformed on the **Nifty 50**, nearly halving the Maximum Drawdown while improving risk-adjusted returns (Sharpe Ratio). For **Bank Nifty**, the results highlight the challenges of regime-switching in high-noise, mean-reverting environments.
 
@@ -24,6 +27,9 @@ The model significantly outperformed on the **Nifty 50**, nearly halving the Max
 1.  **Engine:** Wasserstein-1 distance measures the work required to transform one return distribution into another.
 2.  **Filters:** Uses a combination of Volatility Z-scores and 200-day Moving Averages to confirm signals.
 3.  **Stability:** Implements `n_init` multi-start clustering to ensure stable centroids across time-steps.
+
+### **Learnt Regime Distributions**
+![Interpretability Plot](assets/Interpretability%20plot.png)
 
 ## 🛠️ Tech Stack
 * **Python 3.12**
